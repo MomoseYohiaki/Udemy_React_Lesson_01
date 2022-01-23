@@ -1,11 +1,13 @@
 import React from "react";
 
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
+  // console.log("カラフルコンポーネント発火");
   // 分割代入を使用した書き方
   const { color, children } = props;
   const contentStyle = {
     color,
     fontSize: "25px"
+
     // 本来のCSSの書き方ではダメ。キャメルケースで書く。
     // font-size: "25px"
   };
@@ -14,4 +16,4 @@ const ColorfulMessage = (props) => {
   return <p style={contentStyle}>{children}</p>;
 };
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
